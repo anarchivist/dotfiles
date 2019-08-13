@@ -1,0 +1,13 @@
+location:San Mateo,US
+units:imperial
+show_daylight:true
+symbols:true
+background:\033[40;1m
+delimiter:\033[35m\xe2\x81\x9d
+timeformat:%H.%M
+greeting_text:\xf0\x9f\x93\x8d 
+pressure_text:\xf0\x9f\x8c\x80 
+wind_text:\xf0\x9f\x8c\xac 
+humidity_text:\xf0\x9f\x92\xa7 
+sunrise_text:\xf0\x9f\x8c\x85 
+sunset_text:\xf0\x9f\x8c\x86 

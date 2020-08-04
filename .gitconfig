@@ -16,3 +16,5 @@
 	required = true
 [core]
 	excludesfile = /Users/matienzo/.gitignore_global
+[pull]
+	rebase = false

@@ -5,6 +5,6 @@ my dotfiles managed by [yadm](https://yadm.io). prerequisites are just yadm, so 
 templates:
 
 * .bash\_profile
-* .gitcomfig
+* .gitconfig
 
 if templates are not generating things, try running `yadm alt`. 

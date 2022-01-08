@@ -1,1 +1,1 @@
-OPTIONS=color,!autopickup
+OPTIONS=color, pickup_types:$ 

@@ -18,3 +18,5 @@
 	excludesfile = /Users/matienzo/.gitignore_global
 [pull]
 	rebase = false
+[init]
+	defaultBranch = main

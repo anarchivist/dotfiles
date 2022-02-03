@@ -8,6 +8,9 @@ GOPATH=~/Documents/Code/gocode
 {% endif %}
 PATH=$GOPATH/bin:~/bin:$PATH
 
+if [ -f ~/.bash_profile.local ]; then
+	. ~/.bash_profile.local
+fi
 
 ## virtual environments
 ### rbenv

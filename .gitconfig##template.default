@@ -4,9 +4,9 @@
 [user]
   name = M.A. Matienzo
 {% if yadm.class == "Work" %}
-  email = matienzo@stanford.edu
+  email = maria@tome.page 
 {% else %}
-  email = mark@matienzo.org
+  email = ma@matienzo.org
 {% endif %}
 [alias]
   co = checkout

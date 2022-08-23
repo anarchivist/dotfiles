@@ -29,7 +29,9 @@ export NVM_DIR="$HOME/.nvm"
   [ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
   [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && . "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 ### java/jabba
-JAVA_HOME=`/usr/libexec/java_home`
-export JAVA_HOME
-export JABBA_HOME=~/.jabba
-[ -s "$JABBA_HOME/jabba.sh" ] && source "$JABBA_HOME/jabba.sh"
+if ! [ "$STRANGLE_JABBA" = true ]; then
+  JAVA_HOME=`/usr/libexec/java_home`
+  export JAVA_HOME
+  export JABBA_HOME=~/.jabba
+  [ -s "$JABBA_HOME/jabba.sh" ] && source "$JABBA_HOME/jabba.sh"
+fi

@@ -6,8 +6,8 @@
   name = María A. Matienzo
   email = maria@tome.page 
 {% else %}
-  name = M.A. Matienzo
-  email = ma@matienzo.org
+  name = María A. Matienzo
+  email = maria@matienzo.org
 {% endif %}
 [alias]
   co = checkout

@@ -4,7 +4,7 @@
 [user]
 {% if yadm.class == "Work" %}
   name = María A. Matienzo
-  email = maria@tome.page 
+  email = matienzo@berkeley.edu 
 {% else %}
   name = María A. Matienzo
   email = maria@matienzo.org

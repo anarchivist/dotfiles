@@ -1,0 +1,15 @@
+# vim: set ft=bash ts=2 sw=2 et:
+
+# These are {Berkeley, UCB LIT}-specific env variables, aliases, etc.
+
+## aliases
+#
+# sosumi is just a convenient wrapper around su, and assumes your
+# local administrator account has a similar base username as your
+# login account (e.g. account "foo" has local admin account "la-foo")
+alias sosumi="su la-`whoami`"
+
+## environment variables
+#
+# GITLAB_HOST: used by `glab` Gitlab CLI client (like Github's `gh`)
+export GITLAB_HOST=https://git.lib.berkeley.edu/

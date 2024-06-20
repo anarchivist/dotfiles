@@ -8,6 +8,11 @@ GOPATH=~/Documents/Code/gocode
 {% endif %}
 PATH=$GOPATH/bin:~/bin:$PATH
 
+{% if yadm.class == "Work" %}
+# Source a Berkeley-specific set of config variables, etc.
+. ~/.bash_profile.ucb
+{% endif %}
+
 if [ -f ~/.bash_profile.local ]; then
 	. ~/.bash_profile.local
 fi

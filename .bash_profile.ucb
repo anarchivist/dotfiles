@@ -11,6 +11,8 @@ alias sosumi="su la-`whoami`"
 
 ## environment variables
 #
+# DOCKER_BUILDKIT: enable BuildKit for faster Docker builds
+export DOCKER_BUILDKIT=1
 # GITLAB_HOST: used by `glab` Gitlab CLI client (like Github's `gh`)
 export GITLAB_HOST=https://git.lib.berkeley.edu/
 

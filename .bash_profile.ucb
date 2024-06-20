@@ -13,3 +13,31 @@ alias sosumi="su la-`whoami`"
 #
 # GITLAB_HOST: used by `glab` Gitlab CLI client (like Github's `gh`)
 export GITLAB_HOST=https://git.lib.berkeley.edu/
+
+## functions
+
+# Shorthand for connecting or disconnecting from a SOCKS proxy (source: lap/workflow wiki)
+# To avoid conflicts, specify proxy settings (port, controlPath, etc.) in ~/.ssh/config.
+# usage: socksify vsphere / socksify vsphere off
+function socksify() {
+  local service=${1:?"Usage: socksify <service> [on|off]"}
+  local action=${2:-"on"}
+  
+  local ssh_config_stanza="proxy-${service}"
+  ssh -G "$ssh_config_stanza" | grep -q "dynamicforward" || {
+    echo "Dynamic forwarding not configured for $service, check your ~/.ssh/config"
+    return 1
+  }
+
+  case $action in
+    on)
+      ssh -fqN "$ssh_config_stanza"
+      ;;
+    off)
+      ssh -O exit "$ssh_config_stanza"
+      ;;
+    *)
+      echo "Usage: socksify <service> [on|off]"
+      ;;
+  esac
+}

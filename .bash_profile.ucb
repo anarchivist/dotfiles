@@ -13,6 +13,8 @@ alias sosumi="su la-`whoami`"
 #
 # DOCKER_BUILDKIT: enable BuildKit for faster Docker builds
 export DOCKER_BUILDKIT=1
+# DOCKER_DEFAULT_PLATFORM: force all build/run commands on a specific platform/arch
+export DOCKER_DEFAULT_PLATFORM=linux/amd64
 # GITLAB_HOST: used by `glab` Gitlab CLI client (like Github's `gh`)
 export GITLAB_HOST=https://git.lib.berkeley.edu/
 

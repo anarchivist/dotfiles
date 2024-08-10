@@ -15,6 +15,7 @@
   br = branch
   ci = commit
   st = status
+  pfwl = push --force-with-lease
   hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   type = cat-file q -t
   dump = cat-file -p

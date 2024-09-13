@@ -9,6 +9,10 @@
 # login account (e.g. account "foo" has local admin account "la-foo")
 alias sosumi="su la-`whoami`"
 
+# docker-compose for the dash girlies, dkc for the lazy girlies
+alias docker-compose="docker compose"
+alias dkc="docker compose"
+
 ## environment variables
 #
 # DOCKER_BUILDKIT: enable BuildKit for faster Docker builds

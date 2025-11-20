@@ -21,6 +21,8 @@ export DOCKER_BUILDKIT=1
 export DOCKER_DEFAULT_PLATFORM=linux/arm64
 # GITLAB_HOST: used by `glab` Gitlab CLI client (like Github's `gh`)
 export GITLAB_HOST=https://git.lib.berkeley.edu/
+# DOCKER_CLI_HINTS: disable those annoying hints!
+export DOCKER_CLI_HINTS=false
 
 ## functions
 

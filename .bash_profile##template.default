@@ -7,7 +7,7 @@ alias vlc='/Applications/VLC.app/Contents/MacOS/VLC'
 export BASH_SILENCE_DEPRECATION_WARNING=1
 GOPATH=~/Documents/Code/gocode
 {% endif %}
-PATH=$GOPATH/bin:~/bin:$PATH
+PATH=$GOPATH/bin:~/.local/bin:~/bin:$PATH
 
 {% if yadm.class == "Work" %}
 # Source a Berkeley-specific set of config variables, etc.
